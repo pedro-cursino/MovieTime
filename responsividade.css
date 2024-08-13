@@ -1,0 +1,83 @@
+@media (min-width: 2560px) {
+  .player {
+      width: 80vw;
+      height: 80vh;
+  }
+}
+
+@media (max-width: 2560px) {
+  .player {
+      width: 70vw;
+      height: 70vh;
+  }
+}
+
+@media (max-width: 2400px) {
+  .player {
+      width: 75vw;
+      height: 65vh;
+  }
+}
+
+@media (max-width: 2200px) {
+  .player {
+      width: 70vw;
+      height: 60vh;
+  }
+}
+
+@media (max-width: 2000px) {
+  .player {
+      width: 80vw;
+      height: 75vh;
+  }
+}
+
+@media (max-width: 1800px) {
+  .player {
+      width: 75vw;
+      height: 60vh;
+  }
+}
+
+@media (max-width: 1600px) {
+  .player {
+      width: 80vw;
+      height: 50vh;
+  }
+}
+
+@media (max-width: 1400px) {
+  .player {
+      width: 80vw;
+      height: 40vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .player {
+      width: 75vw;
+      height: 35vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .player {
+      width: 75vw;
+      height: 25vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .player {
+      width: 80vw;
+      height: 25vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .player {
+      width: 75vw;
+      height: 20vh;
+  }
+}
