@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/popup.css" />
+  <link rel="stylesheet" href="./css/canais.css" />
+  <link rel="stylesheet" href="./css/responsividade.css" />
+  <title>Movie Time!</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/708/708862.png" type="image/png">
+</head>
+
+<body>
+  <div class="logo-container">
+    <img src="https://seeklogo.com/images/M/movie-time-cinema-logo-8B5BE91828-seeklogo.com.png" alt="Logo do Site"
+      class="logo">
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Pesquisar Filme">
+    <button id="searchButton">Buscar</button>
+  </div>
+
+  <ul class="movies">
+    <div class="movies"></div>
+  </ul>
+
+  <div id="overlay" class="overlay"></div>
+
+  <div id="channel-div">
+    <h1>Canais de Televisão</h1>
+    <div id="channel-logos"></div>
+  </div>
+
+
+  <div id="popup" class="popup">
+    <button onclick="closePopup()">X</button>
+    <div class="button-container">
+      <button onclick="changePlayer('https://embedder.net/e/movie?imdb=')">Player 1</button>
+      <button onclick="changePlayer('https://playerflix.com/filme/')">Player 2</button>
+      <button onclick="changePlayer('https://embed.embedplayer.site/')">Player 3</button>
+      <button onclick="changePlayer('https://embed.warezcdn.com/filme/')">Player 4</button>
+      <button onclick="changePlayer('https://embedfilmes.cc/embed/movie?imdb=')">Player 5</button>
+    </div>
+    <iframe id="EmbedderContainer" src="" width="80vw" height="50vh"
+      class="player" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  </div>
+
+
+  <footer>
+    <p>Feito com ❤️ por <a href="https://www.linkedin.com/in/pedro-cursino/" target="_blank">Pedro</a></p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/canais.js"></script>
+  <script src="./js/players.js"></script>
+</body>
+
+</html>
