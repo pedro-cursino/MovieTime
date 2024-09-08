@@ -4,7 +4,7 @@ fetch('../canais.json')
     const container = document.getElementById('channel-logos');
 
     channels.forEach(channel => {
-      if (img.src !== "undefined") {
+      if (channel.nome !== null) {  // ARRUMAR
         const img = document.createElement('img');
         img.src = `https://redecanaistv.dev/assets/imgs-videos/Canais/thumb-${channel.src}.jpg`;
         img.className = 'logo';
