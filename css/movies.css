@@ -1,0 +1,36 @@
+.movies {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translate(5%, 0%);
+}
+
+.movies li {
+  max-width: 250px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  background: #272727;
+}
+
+.movies li img {
+  max-width: 200px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.movies li h2 {
+  color: #fff;
+  font-size: 1.8em;
+  padding: 15px 10px 0;
+  margin-top: auto;
+  margin-bottom: 5px;
+  font-family: "Oswald", sans-serif;
+}
