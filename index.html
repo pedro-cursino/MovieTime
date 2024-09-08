@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/movies.css" />
+  <link rel="stylesheet" href="./css/animes.css" />
+  <link rel="stylesheet" href="./css/series.css" />
   <link rel="stylesheet" href="./css/popup.css" />
   <link rel="stylesheet" href="./css/canais.css" />
   <link rel="stylesheet" href="./css/responsividade.css" />
@@ -21,24 +24,48 @@
   </div>
 
   <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Pesquisar Filme">
+    <input type="text" id="searchInput" placeholder="Pesquisar"> <!-- script.js style.css -->
     <button id="searchButton">Buscar</button>
   </div>
 
+
+
+  <div class="div-reverse1">
+    <h1 class="titulo">Filmes</h1>
+  </div>
+
   <ul class="movies">
-    <div class="movies"></div>
+    <div class="movies"></div> <!-- script.js movies.css -->
   </ul>
 
-  <div id="overlay" class="overlay"></div>
 
-  <div id="channel-div">
-    <h1>Canais de Televisão</h1>
-    <div id="channel-logos"></div>
+  <div class="div-reverse3">
+    <h1 class="titulo">Series</h1>
+  </div>
+
+  <ul class="series">
+    <div class="series"></div> <!-- series.js series.css -->
+  </ul>
+
+
+  <div class="div-reverse2">
+    <h1 class="titulo">Animes</h1>
+  </div>
+
+  <ul id="animes"></ul> <!-- animes.js animes.css -->
+
+
+
+  <div id="overlay" class="overlay"></div> <!-- players.js popup.css -->
+
+  <div id="div-reverse">
+    <h1 class="titulo">Canais de Televisão</h1>
+    <div id="channel-logos"></div> <!-- canais.js canais.css -->
   </div>
 
 
   <div id="popup" class="popup">
-    <button onclick="closePopup()">X</button>
+    <button onclick="closePopup()">X</button> <!-- players.js popup.css -->
     <div class="button-container">
       <button onclick="changePlayer('https://embedder.net/e/movie?imdb=')">Player 1</button>
       <button onclick="changePlayer('https://playerflix.com/filme/')">Player 2</button>
@@ -46,8 +73,15 @@
       <button onclick="changePlayer('https://embed.warezcdn.com/filme/')">Player 4</button>
       <button onclick="changePlayer('https://embedfilmes.cc/embed/movie?imdb=')">Player 5</button>
     </div>
-    <iframe id="EmbedderContainer" src="" width="80vw" height="50vh"
-      class="player" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    <iframe id="EmbedderContainer" src="" width="80vw" height="50vh" class="player" allowfullscreen="allowfullscreen"
+      frameborder="0"></iframe>
+
+    <div class="episode-controls">
+      <button id="prevEpisode">Episódio Anterior</button>
+      <input type="number" id="episodeInput" value="1" min="1">
+      <button id="nextEpisode">Próximo Episódio</button>
+    </div>
+
   </div>
 
 
@@ -58,6 +92,8 @@
   <script src="./js/script.js"></script>
   <script src="./js/canais.js"></script>
   <script src="./js/players.js"></script>
+  <script src="./js/series.js"></script>
+  <script src="./js/animes.js"></script>
 </body>
 
 </html>
