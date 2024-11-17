@@ -1,0 +1,42 @@
+#div-reverse,
+.div-reverse2,
+.div-reverse1,
+.div-reverse3 {
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../src/noite-estrelada.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: center;
+  display: none;
+  background-attachment: fixed;
+}
+
+#div-reverse{
+margin-bottom: 6%;
+}
+
+.titulo {
+  color: azure;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 160%;
+}
+
+#div-reverse img {
+  cursor: pointer;
+  width: 7%;
+  max-width: 25%;
+  height: auto;
+}

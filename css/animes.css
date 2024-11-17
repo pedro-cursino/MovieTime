@@ -1,0 +1,95 @@
+.episode-controls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.episode-controls button,
+.episode-controls input,
+.search-controls input,
+.search-controls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+input[type="number"] {
+  width: 60px;
+  text-align: center;
+}
+
+.episode-controls {
+  display: none;
+}
+
+/* Remove setas para inputs numéricos */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+ul#animes {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translate(5%, 0%);
+}
+
+ul#animes li {
+  max-width: 250px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  background: #272727;
+}
+
+ul#animes li img {
+  max-width: 200px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+ul#animes li h2 {
+  color: #fff;
+  font-size: 1.8em;
+  padding: 15px 10px 0;
+  margin-top: auto;
+  margin-bottom: 5px;
+  font-family: "Oswald", sans-serif;
+}
+
+.episode-controls {
+  padding-top: 10px;
+  margin: 0 auto;       /* Centraliza horizontalmente */
+  text-align: center;
+}
+
+
+#nextEpisode, #prevEpisode {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 10px 10px;
+  background-color: #5900fd;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 10%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#episodeInput {
+  font-weight: bold;
+  padding: 10px 5px;
+}
